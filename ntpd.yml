@@ -2,5 +2,5 @@
 - hosts: all
   become: yes
   tasks:
-  -yum: name=ntp state=present
-  -service: name=ntpd state=started enable=yes 
+  - yum: name=ntp state=present
+  - service: name=ntpd state=started enable=yes 
