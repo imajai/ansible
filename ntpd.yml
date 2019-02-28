@@ -1,10 +1,8 @@
 ---
 - hosts: localhost
-  #become: yes
+  remote_user: root
+  become: yes
+  become_user: root
   tasks:
-  - name: log in as shrenikp7 and do something as root
-    remote_user: root
-    become: yes
-    become_user: root
   - yum: name=ntp state=present
   - service: name=ntpd state=started enable=yes 
