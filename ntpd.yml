@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
-  remote_user: root
-  become: yes
-  become_user: root
+  #remote_user: root
+  #become: yes
+  #become_user: root
   tasks:
   - yum: name=ntp state=present
   - service: name=ntpd state=started enabled=yes 
