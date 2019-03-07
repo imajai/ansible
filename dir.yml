@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+  - name: ansible create directory example
+    file:
+      path: /root/dir1/
+      state: directory
+      owner: root
+      group: root
+      mode: 0775
+      recurse: yes    #This way, it will create the both directories, if they didn't exist.
