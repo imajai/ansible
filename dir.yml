@@ -2,8 +2,8 @@
   tasks:
   - name: ansible create directory example
     file:
-      path: /root/dir1/
-      state: directory
+      path: /home/file1.txt
+      state: touch
       owner: root
       group: root
       mode: 0775
