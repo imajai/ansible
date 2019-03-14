@@ -2,7 +2,7 @@
   tasks:
   - name: ansible create directory example
     file:
-      path: /root/dir1/
+      path: /var/lib/jenkins/dir1/
       state: directory
       owner: root
       group: root
