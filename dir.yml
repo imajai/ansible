@@ -4,7 +4,7 @@
     file:
       path: /var/lib/jenkins/dir1/
       state: directory
-      owner: root
+      owner: jenkins
       group: root
       mode: 0775
       recurse: yes    #This way, it will create the both directories, if they didn't exist.
