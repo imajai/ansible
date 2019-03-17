@@ -4,7 +4,7 @@
     file:
       path: /var/lib/jenkins/file1.txt
       state: touch
-      owner: root
-      group: root
+      owner: jenkins
+      group: jenkins
       mode: 0775
       #recurse: yes    #This way, it will create the both directories, if they didn't exist.
