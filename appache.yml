@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: slave1
   tasks:
     - name: Install Apache.
       command: yum install --quiet -y httpd httpd-devel
