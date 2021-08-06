@@ -1,0 +1,9 @@
+---
+- name: controll firewall serivce
+  hosts: slave1
+  become: true
+  tasks:
+    name: task-1 stopp firewalld
+    service:
+    - name: firewalld
+      state: stopped
