@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: slave1
   tasks:
   - name: ansible create directory example
     file:
