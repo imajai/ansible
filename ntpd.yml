@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: slave1
   remote_user: jenkins
   #become: yes
   become_user: jenkins
