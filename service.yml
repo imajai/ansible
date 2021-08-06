@@ -3,7 +3,7 @@
   hosts: slave1
   become: true
   tasks:
-    name: task-1 stopp firewalld
+  - name: task-1 stopp firewalld
     service:
-    - name: firewalld
+      name: firewalld
       state: stopped
